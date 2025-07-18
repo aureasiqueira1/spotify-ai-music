@@ -56,9 +56,10 @@ export async function POST(request: NextRequest) {
       tracks: tracks,
       moodData: moodInput,
       createdAt: new Date().toISOString(),
+      spotifyUrl: "",
     };
 
-    // Salvar no Spotify se solicitado
+    // Salvar no Spotify se solicitados
     if (body.saveToSpotify) {
       console.log("💾 Salvando playlist no Spotify automaticamente...");
       try {
