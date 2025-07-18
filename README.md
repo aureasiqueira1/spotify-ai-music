@@ -2,6 +2,31 @@
 
 Uma aplicação web que permite descobrir música através de cores, emojis e emoções usando inteligência artificial.
 
+## 📸 Screenshots
+
+## 📸 Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img width="500" alt="Tela Principal" src="https://github.com/user-attachments/assets/ea17c2b8-acfb-4339-9641-078c85f3a1ea" />
+      </td>
+      <td align="center">
+        <img width="500" alt="Dashboard de Análise" src="https://github.com/user-attachments/assets/d1830d08-432e-4f15-8ca5-f5e3376ff861" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img width="500" alt="Comparação de Prompts" src="https://github.com/user-attachments/assets/44daafc0-6589-4811-83e6-0f210b582e20" />
+      </td>
+      <td align="center">
+        <img width="500" alt="Estatísticas" src="https://github.com/user-attachments/assets/206f20c5-5067-45b1-9ea2-00dc94f01f19" />
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## 🚀 Funcionalidades
 
 - **Autenticação com Spotify**: Login seguro usando OAuth2
