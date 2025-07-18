@@ -26,15 +26,51 @@ export interface SpotifyTrack {
 }
 
 export interface AudioFeatureTargets {
-  acousticness?: number;
-  danceability?: number;
-  energy?: number;
-  instrumentalness?: number;
-  liveness?: number;
-  loudness?: number;
-  speechiness?: number;
-  tempo?: number;
-  valence?: number;
+  danceability?: {
+    min: number;
+    max: number;
+    target: number;
+  };
+  energy?: {
+    min: number;
+    max: number;
+    target: number;
+  };
+  acousticness?: {
+    min: number;
+    max: number;
+    target: number;
+  };
+  instrumentalness?: {
+    min: number;
+    max: number;
+    target: number;
+  };
+  liveness?: {
+    min: number;
+    max: number;
+    target: number;
+  };
+  loudness?: {
+    min: number;
+    max: number;
+    target: number;
+  };
+  speechiness?: {
+    min: number;
+    max: number;
+    target: number;
+  };
+  tempo?: {
+    min: number;
+    max: number;
+    target: number;
+  };
+  valence?: {
+    min: number;
+    max: number;
+    target: number;
+  };
 }
 
 export interface MoodInput {
