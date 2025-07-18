@@ -119,7 +119,7 @@ export function PlaylistGenerator({ playlist }: PlaylistGeneratorProps) {
   const stats = getPlaylistStats();
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 max-h-[80vh] overflow-hidden flex flex-col">
+    <div className="bg-white rounded-lg shadow-lg p-6 max-h-[130vh] overflow-hidden flex flex-col">
       {/* Header */}
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">
