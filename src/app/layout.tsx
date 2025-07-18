@@ -1,29 +1,14 @@
-import type { Metadata, Viewport } from "next";
+import TokenStatus from "@/components/auth/TokenStatus";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NextAuthSessionProvider from "./providers/SessionProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Spotify AI Music Discovery",
-  description:
-    "Descubra música através de cores, emojis e emoções com inteligência artificial",
-  keywords: ["spotify", "música", "IA", "playlist", "mood", "emoções"],
-  authors: [{ name: "Spotify AI Music Discovery" }],
-  robots: "index, follow",
-  openGraph: {
-    title: "Spotify AI Music Discovery",
-    description:
-      "Descubra música através de cores, emojis e emoções com inteligência artificial",
-    type: "website",
-    locale: "pt_BR",
-  },
-  metadataBase: new URL("http://localhost:3000"),
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
+  description: "Descubra músicas baseadas no seu mood usando IA",
 };
 
 export default function RootLayout({
@@ -33,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NextAuthSessionProvider>
+          <TokenStatus />
+          {children}
+        </NextAuthSessionProvider>
+      </body>
     </html>
   );
 }
