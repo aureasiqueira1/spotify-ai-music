@@ -204,13 +204,13 @@ export function PlaylistGenerator({ playlist }: PlaylistGeneratorProps) {
 
               {/* Play Button */}
               <button
-                onClick={() => handlePlayPreview(track.preview_url, track.id)}
+                onClick={() => handlePlayPreview(track.previewUrl, track.id)}
                 className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${
-                  track.preview_url
+                  track.previewUrl
                     ? "bg-green-500 hover:bg-green-600 text-white"
                     : "bg-gray-200 text-gray-400 cursor-not-allowed"
                 }`}
-                disabled={!track.preview_url}
+                disabled={!track.previewUrl}
               >
                 {isPlaying === track.id ? (
                   <svg

@@ -9,7 +9,24 @@ export interface PlaylistDTO {
     value: any;
   };
   createdAt: string;
-  spotifyUrl?: string;
+  spotifyUrl: string;
+  artists: string[];
+  album: string;
+  audioFeatures: {
+    danceability: number;
+    energy: number;
+    valence: number;
+    acousticness: number;
+    instrumentalness: number;
+    speechiness: number;
+    tempo: number;
+    loudness: number;
+  };
+  previewUrl: string;
+  spotifyUri: string;
+  albumImage: string;
+  durationMs: number;
+  popularity: number;
 }
 
 export interface SpotifyTrack {
@@ -17,12 +34,25 @@ export interface SpotifyTrack {
   name: string;
   artists: string[];
   album: string;
-  preview_url: string | null;
   external_urls?: {
     spotify: string;
   };
   duration_ms?: number;
-  popularity?: number;
+  audioFeatures: {
+    danceability: number;
+    energy: number;
+    valence: number;
+    acousticness: number;
+    instrumentalness: number;
+    speechiness: number;
+    tempo: number;
+    loudness: number;
+  };
+  previewUrl: string;
+  spotifyUri: string;
+  albumImage: string;
+  durationMs: number;
+  popularity: number;
 }
 
 export interface AudioFeatureTargets {

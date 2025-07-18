@@ -1,10 +1,8 @@
-import { AudioFeatureMapping } from "@/lib/types/common";
-
 export class Emotion {
   constructor(
     public type: EmotionType,
     public intensity: number,
-    public audioFeatureMappings: AudioFeatureMapping[]
+    public audioFeatureMappings: any[]
   ) {}
 
   static fromText(text: string): Emotion {

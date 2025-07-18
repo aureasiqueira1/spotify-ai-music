@@ -7,9 +7,9 @@ export class Track {
     public audioFeatures: AudioFeatures,
     public durationMs: number,
     public popularity: number,
-    public previewUrl?: string,
-    public spotifyUri?: string,
-    public albumImage?: string
+    public previewUrl: string,
+    public spotifyUri: string,
+    public albumImage: string
   ) {}
 
   getDurationMinutes(): string {

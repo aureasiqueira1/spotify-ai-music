@@ -255,7 +255,7 @@ export class RecommendationEngine {
           variation[feature as keyof AudioFeatureTargets] = {
             min: newMin,
             max: newMax,
-            target: newTarget,
+            target: newTarget || 0,
           };
         }
       });

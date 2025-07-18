@@ -336,7 +336,7 @@ export class GeneratePlaylistUC {
     }
   }
 
-  private mapPlaylistToDTO(playlist: Playlist): PlaylistDTO {
+  private mapPlaylistToDTO(playlist: Playlist): any {
     return {
       id: playlist.id,
       name: playlist.name,
