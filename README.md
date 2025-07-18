@@ -4,8 +4,6 @@ Uma aplicação web que permite descobrir música através de cores, emojis e em
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 <div align="center">
   <table>
     <tr>
