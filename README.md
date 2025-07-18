@@ -313,5 +313,3 @@ Se encontrar problemas ou tiver sugestões:
 - [ ] Integração com redes sociais
 
 ---
-
-Feito com ❤️ e 🤖 por [Seu Nome]
